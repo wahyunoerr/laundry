@@ -9,12 +9,11 @@ class Transaksi extends Model
 {
     use HasFactory;
     protected $table = 'tbl_transaksi';
-    protected $fillabel = [
+    protected $fillable = [
         'kodeTransaksi',
-        'costumerId',
-        'jenisId',
-        'harga',
-        'qty',
+        'costumer_id',
+        'jenis_id',
+        'berat',
         'keterangan',
         'total'
     ];
