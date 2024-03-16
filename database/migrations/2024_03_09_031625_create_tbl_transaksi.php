@@ -14,12 +14,11 @@ return new class extends Migration
         Schema::create('tbl_transaksi', function (Blueprint $table) {
             $table->id();
             $table->string('kodeTransaksi');
-            $table->unsignedBigInteger('costumerId');
-            $table->unsignedBigInteger('jenisId');
-            $table->decimal('harga', 20, 2);
-            $table->bigInteger('qty');
-            $table->string('keterangan', 100);
-            $table->bigInteger('total');
+            $table->unsignedBigInteger('costumer_id');
+            $table->unsignedBigInteger('jenis_id');
+            $table->bigInteger('berat');
+            $table->string('keterangan', 100)->nullable();
+            $table->bigInteger('total')->nullable();
             $table->timestamps();
         });
     }

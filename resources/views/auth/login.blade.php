@@ -45,7 +45,7 @@
                                     <form class="user" action="{{ route('login') }}" method="POST">
                                         @csrf
                                         <div class="form-group">
-                                            <input type="name" name="name" class="form-control form-control-user"
+                                            <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputName" aria-describedby="nameHelp"
                                                 placeholder="Enter Name...">
                                         </div>

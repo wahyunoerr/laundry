@@ -44,7 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::controller(TransaksiController::class)->group(function () {
         Route::get('/transaksi', 'index');
         Route::get('/transaksi/create', 'create');
-        Route::post('/orders', 'store');
+        Route::post('/transaksi/simpan', 'store')->name('transaksi.simpan');
     });
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
